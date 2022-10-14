@@ -1,4 +1,5 @@
 import React from 'react'
+import Navbar from "../components/Navbar";
 import { Grid, Container, Typography } from '@mui/material'
 import { HomePgDiv, ExclusiveDealsDiv, RewardsDiv, HeadingAndPara } from "../components/Div"
 import img2 from '../images/img2.jpg'
@@ -8,10 +9,13 @@ import img12 from '../images/img12.png'
 import img13 from '../images/img13.png'
 import img14 from '../images/img14.png'
 import img15 from '../images/img15.jpg'
+import Footer from "../components/Footer";
 
 export default function MyMcDonaldsRewards() {
     return (
         <>
+            <Navbar />
+            
             <Container m={10}>
                 <Typography my={4} mt={13} textAlign="center" fontWeight="bold" variant="h3">MyMcDonald’s Rewards</Typography>
 
@@ -99,6 +103,8 @@ export default function MyMcDonaldsRewards() {
                 <br />
                 <HeadingAndPara variant="h4" fontWeight="normal" headingTxt="Where Are the Terms and Conditions?" pText="You can access MyMcDonald's Rewards Terms and Conditions by visiting the MyMcDonald’s Rewards Terms and Conditions section." />
             </Container>
+
+            <Footer />
         </>
     )
 }

@@ -1,12 +1,16 @@
 import React from 'react'
+import Navbar from "../components/Navbar";
 import { Container, Box, TextField, Button } from '@mui/material'
 import InputAdornment from '@mui/material/InputAdornment';
 import SearchIcon from '@mui/icons-material/Search';
 import MyLocationIcon from '@mui/icons-material/MyLocation';
+import Footer from "../components/Footer";
 
 export default function Locate() {
     return (
         <>
+            <Navbar />
+            
             <Container sx={{ display: "flex", alignItems: "center", my: 15 }}>
                 <TextField sx={{ width: "80%" }} id="standard-basic" label="Zip or City & State" variant="standard" />
                 <InputAdornment position="end">
@@ -21,6 +25,7 @@ export default function Locate() {
                 </Box>
             </Container>
 
+            <Footer />
         </>
     )
 }

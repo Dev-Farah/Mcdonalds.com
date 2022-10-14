@@ -1,4 +1,5 @@
 import React from 'react'
+import Navbar from "../components/Navbar";
 import { Grid, Container, Typography } from '@mui/material';
 import { ExclusiveDealsDiv, HeadingAndPara } from "../components/Div"
 import img20 from "../images/img20.jpg";
@@ -10,10 +11,13 @@ import img25 from "../images/img25.jpg";
 import img26 from "../images/img26.jpg";
 import img27 from "../images/img27.jpg";
 import img28 from "../images/img28.jpg";
+import Footer from "../components/Footer";
 
 export default function AboutOurFood() {
     return (
         <>
+            <Navbar />
+            
             <Container m={5}>
                 <Typography mt={15} textAlign="center" fontWeight="bold" variant="h3">About Our Food</Typography>
                 <img src={img20} />
@@ -33,6 +37,8 @@ export default function AboutOurFood() {
                 <ExclusiveDealsDiv src={img27} h4Text="Happy Meal® Nutrition" pText="When your kids enjoy a meal that’s delicious and balanced, you’ll enjoy it too." btnVal="Learn More" />
                 <ExclusiveDealsDiv src={img28} h4Text="Variety of Choices" pText="When it comes to quality options, we’ve got you covered." btnVal="Learn More" />
             </Grid>
+
+            <Footer />
         </>
     )
 }

@@ -6,9 +6,9 @@ import { NavLink } from 'react-router-dom';
 export default function NotFound() {
     return (
         <>
-            <Container sx={{ textAlign: "center", alignContent: "center" }}>
+            <Container sx={{ textAlign: "center",  margin: "30px auto" }}>
                 <Typography variant="h2">
-                    Not Found
+                    Page Not Found
                 </Typography>
                 <img src={error} width="35%" alt="error" />
                 <br />

@@ -1,4 +1,5 @@
 import React from 'react'
+import Navbar from "../components/Navbar";
 import { MainHeading, HomePgDiv, ExclusiveDealsDiv } from "../components/Div"
 import { Grid } from '@mui/material';
 import img2 from "../images/img2.jpg";
@@ -6,10 +7,13 @@ import img16 from "../images/img16.jpg";
 import img17 from "../images/img17.png";
 import img18 from "../images/img18.jpg";
 import img19 from "../images/img19.jpg";
+import Footer from "../components/Footer";
 
 export default function ExclusiveDeals() {
     return (
         <>
+            <Navbar />
+            
             <MainHeading text="Exclusive McDonald's Deals" />
             <HomePgDiv src={img2} h4Text="Free Fries Now. Free McDonald’s Later.*" pText="Get free large Fries when you download the McDonald’s app and join MyMcDonald’s Rewards. Then, unlock free McDonald’s faves only in the app with 1500 bonus points after your first purchase." smallText="*Offer valid 1x thru the last day of the month for first time app users at participating McDonald's until 10/31/22. May take up to 48 hours to appear in your deals. Free Loyalty Reward Points valid 1x thru 12/31/22 for first time MyMcDonald’s Rewards users. Program available only at participating McDonald’s. Excludes delivery. McD app download and registration required." btnVal="Download the App" />
 
@@ -20,6 +24,8 @@ export default function ExclusiveDeals() {
             </Grid>
 
             <HomePgDiv src={img19} h4Text="Get Your Free Fries* with Contactless Mobile Ordering and Curbside Pickup" pText="Get free medium Fries every Friday, exclusively with Mobile Order & Pay with any minimum $1 purchase.*" smallText="*Offer valid 1x each Friday thru 12/31/22 with minimum purchase of $1 (excluding tax). McD app download and registration required. Offer only available through Mobile Order & Pay. Mobile Order & Pay at participating McDonald's. ©2022 McDonald's" btnVal="Use the App to Order" />
+
+            <Footer />
         </>
     )
 }

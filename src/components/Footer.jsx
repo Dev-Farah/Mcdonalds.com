@@ -1,7 +1,7 @@
 import React from "react";
 import '../App.css';
 
-import { Container, Box, Grid, Divider, Typography } from '@mui/material';
+import { Container, Box, Divider, Typography } from '@mui/material';
 import Logo from "../images/logo.jpg";
 import AppStore from "../images/app_store_badge.png";
 import GooglePlay from "../images/google_play_badge.png";
@@ -54,7 +54,6 @@ export default function Footer() {
                             <li>McDonald’s Asian Pacific American</li>
                             <li>McDonald’s International</li>
                             <li>Black and Positively Golden</li>
-                            <li>McDonald’s LGBTQ+</li>
                         </ul>
 
                         <ul>
