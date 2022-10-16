@@ -39,7 +39,7 @@ export default function Navbar() {
                         {/* Navbar line 2 */}
                         <Toolbar sx={{ display: 'flex', flexWrap: "wrap" }}>
                             <Box className="nav-link">
-                                <Link to="/" style={{ display: 'flex', justifyContent: "center", alignItems: "center", color: "#000", textDecoration: "none" }}>
+                                <Link to="/FullMenu" style={{ display: 'flex', justifyContent: "center", alignItems: "center", color: "#000", textDecoration: "none" }}>
                                     Our Menu
                                 </Link>
                             </Box>

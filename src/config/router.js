@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 // Importing All Pages
 import Home from "../screens/index";
+import FullMenu from "../screens/fullmenu";
 import DownloadApp from "../screens/downloadapp";
 import MyMcDonaldsRewards from "../screens/mymcdonaldsrewards";
 import ExclusiveDeals from "../screens/exclusivedeals";
@@ -15,6 +16,7 @@ export default function AppRouter() {
             <Router>
                 <Routes>
                     <Route path="/" element={<Home />} />
+                    <Route path="FullMenu/*" element={<FullMenu />} />
                     <Route path="DownloadApp" element={<DownloadApp />} />
                     <Route path="MyMcDonaldsRewards" element={<MyMcDonaldsRewards />} />
                     <Route path="ExclusiveDeals" element={<ExclusiveDeals />} />
